@@ -1,0 +1,175 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700");
+.open-sans,
+html,
+body,
+.pure-g [class *="pure-u"],
+h1,
+h2 {
+  font-family: 'Open Sans', sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  position: relative;
+  width: 480px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.page {
+  width: 100%;
+}
+.page.page-gray {
+  background: #f2f2f2;
+}
+.spacer-10 {
+  height: 10px;
+}
+.spacer-20 {
+  height: 20px;
+}
+.spacer-40 {
+  height: 40px;
+}
+.spacer-60 {
+  height: 60px;
+}
+.spacer-80 {
+  height: 80px;
+}
+.spacer-100 {
+  height: 100px;
+}
+.pure-g [class *="pure-u"] img {
+  max-width: 100%;
+}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+h1 {
+  color: #333;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 2px 0;
+}
+h2 {
+  color: #666;
+  font-weight: 300;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin: 2px 0;
+}
+hr {
+  border: none;
+  border-top: 2px dotted #eee;
+}
+p {
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+  margin: 2px 0;
+}
+p.date {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #bbb;
+}
+p b,
+p strong {
+  font-weight: 400;
+  color: #333;
+}
+p a {
+  display: inline-block;
+  color: #000;
+  font-weight: 400;
+  text-decoration: none;
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+  line-height: 22px;
+  -webkit-transition: border-color 0.4s ease;
+  -moz-transition: border-color 0.4s ease;
+  -o-transition: border-color 0.4s ease;
+  -ms-transition: border-color 0.4s ease;
+  transition: border-color 0.4s ease;
+}
+p a:hover {
+  border-bottom: 2px solid rgba(0,0,0,0.4);
+}
+img.coral-logo {
+  width: 80px;
+  height: auto;
+}
+.player {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  position: relative;
+  margin: auto;
+  -webkit-transition: opacity 0.4s ease;
+  -moz-transition: opacity 0.4s ease;
+  -o-transition: opacity 0.4s ease;
+  -ms-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+.player:hover {
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+}
+.player > img {
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 37px;
+  border-radius: 37px;
+}
+.player .player-mask {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.player .player-mask .play,
+.player .player-mask .pause {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -16px;
+  margin-left: -16px;
+  -webkit-transition: opacity 0.3s ease, transform 0.4s ease;
+  -moz-transition: opacity 0.3s ease, transform 0.4s ease;
+  -o-transition: opacity 0.3s ease, transform 0.4s ease;
+  -ms-transition: opacity 0.3s ease, transform 0.4s ease;
+  transition: opacity 0.3s ease, transform 0.4s ease;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transform: scale(0.6, 0.6);
+  -moz-transform: scale(0.6, 0.6);
+  -o-transform: scale(0.6, 0.6);
+  -ms-transform: scale(0.6, 0.6);
+  transform: scale(0.6, 0.6);
+}
+.player .player-mask .play.visible,
+.player .player-mask .pause.visible {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
